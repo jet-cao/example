@@ -1,0 +1,135 @@
+.classification{
+  margin-top: 30px;
+  border-bottom: solid 2px rgb(255, 53, 147);
+  text-align: left;
+  position: relative;
+  min-width: 1180px;
+}
+
+.classification a{
+  font-size: 0.8em;
+  color: black;
+}
+
+.classification ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(255, 53, 147);
+  display: none;
+}
+
+.classification .first{
+  display: inline;
+  margin-left: 5%;
+}
+
+.classification .first span{
+  padding: 10px;
+  margin-left: 5%;
+}
+
+.classification .first:hover >ul{
+  display: block;
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  width: 100%;
+}
+
+.classification .first:hover span{
+  background-color: rgb(255, 53, 147)
+}
+
+.classification .first:hover span a{
+  color: white;
+}
+
+.classification .list{
+  width: 200px;
+  display: inline-block;
+  left: 5%;
+  border: 2px solid  rgb(255, 53, 147);
+  border-bottom: none;
+  margin: auto;
+}
+
+.classification .list:hover{
+  background-color: white;
+}
+
+.classification .list:hover :first-child{
+  color:  rgb(255, 53, 147);
+}
+
+.classification .list:hover a{
+  color: rgb(70, 70, 70);
+}
+
+.classification .list:hover ul{
+  display: block;
+  position: absolute;
+  background-color: white;
+  margin-top: 10px;
+  margin-left: -12px;
+}
+
+.classification .list .one{
+  padding: 10px
+}
+
+.classification .list .one a{
+  margin-right: 10px
+}
+
+.classification .list a{
+  color: white;
+}
+.classification .list ul{
+ display: none;
+ margin-left: -2px;
+ padding: 5px;
+ border: solid 2px rgb(255, 53, 147);
+ border-top: none;
+}
+
+.classification .list ul li a{
+  margin: 5px;
+}
+
+.classification .list ul li :first-child{
+  font-weight: bold;
+}
+
+.classification .list ul li a:hover{
+  text-decoration: underline;
+}
+
+.classification .nav{
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+}
+
+.classification .nav a{
+  font-size: 0.9em;  
+}
+
+.classification .nav .background{
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(255, 53, 147);
+  transition: height 0.2s;
+}
+
+.classification .nav:hover .background{
+  height: 38px;
+}
+
+.classification .nav:hover a {
+  color: white;
+}

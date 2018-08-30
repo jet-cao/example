@@ -1,0 +1,110 @@
+a{
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+}
+.Nav{
+  display: inline;
+}
+.Nav div{
+  display: inline-block;
+  font-size: 0.7em;
+}
+.Nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Nav .one {
+  padding: 10px;
+  position: relative;
+}
+.Nav .two{
+  display: none;
+  overflow: auto;
+  left: 0;
+  top: 34px;
+}
+
+.Nav .one:hover {
+  background: white;
+}
+
+.Nav .one:hover >a{
+  color:tomato;
+}
+.Nav .one:hover .two{
+  display: block;
+  position: absolute;
+  background-color: white;
+  z-index: 99;
+}
+.Nav li{
+  padding: 10px;
+  white-space: nowrap;
+}
+.Nav li:hover {
+  background-color: rgb(238, 238, 238);
+}
+
+.navigation{
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 10px;
+}
+
+.navigation div{
+  position: relative;
+  display: none;
+  width: 1082px;
+  left: 500px;
+}
+
+.navigation:hover {
+  background-color: white;
+}
+
+.navigation:hover a{
+  color: tomato;
+  color: rgb(90, 90, 90);
+}
+
+.navigation:hover div{
+  display: block;
+  position: absolute;
+  border:solid rgb(238, 238, 238) 1px;
+  top:34px;
+  border-top: none;
+  background-color: white;
+  z-index: 99;
+  left: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+.navigation ul{
+  list-style: none;
+  padding: 0;
+}
+
+.navigation ul li{
+  display: inline-block;
+  padding: 10px;
+  width: 240px;
+  text-align: left;
+}
+
+.navigation ul li ul li{
+  display: inline-block;
+  margin-left: -15px;
+  width: 70px;
+}
+
+.navigation ul li ul li a{
+  padding: 5px;
+}
+
+.navigation ul li ul li:hover a{
+  color: white;
+  background-color: steelblue;
+}

@@ -1,0 +1,44 @@
+.HotSale{
+  display: inline-block;
+  width: 250px;
+}
+
+.HotSale img{
+  width: 250px;
+}
+
+.HotSale .img div{
+  display: none;
+}
+
+.HotSale .img:hover{
+  position: relative;
+}
+
+.HotSale .img:hover div{
+  position: absolute;
+  display: block;
+  background-color: rgba(255, 72, 40, 0.925);
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 10px;
+  width: 230px;
+  color: white;
+}
+
+.HotSale div div p{
+  font-size: 0.8em;
+}
+
+.HotSale a :nth-child(2) :nth-child(1){
+  color: tomato;
+}
+
+.HotSale a :nth-child(2) :nth-child(2){
+  float: right;
+  font-size: .8em;
+}
+

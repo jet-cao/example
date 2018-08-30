@@ -1,0 +1,73 @@
+.course{
+  margin-top: 10%;
+  overflow: hidden;
+  padding-bottom: 10px
+}
+
+.course .contral{
+  padding: 5px 20px;
+  border: solid tomato 1px;
+  cursor: pointer;
+  font-size: .7em;
+}
+
+.coursediv {
+  white-space: nowrap;
+  text-align: left;
+}
+
+.coursediv a{
+  color: black
+}
+
+.coursediv a:hover{
+  color: tomato;
+}
+
+.coursediv ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ccc;
+}
+
+.coursediv ul li{
+  display: inline-block;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 15px
+}
+
+.course p{
+  text-align: left;
+}
+
+.course p span{
+  border-top: red 2px solid;
+  padding-top: 10px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.coursediv .content {
+  display: inline-block;
+  width: 400px;
+  white-space: normal;
+}
+
+.coursediv .content figure{
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.coursediv .content figure img{
+  width: 100%;
+}
+
+.coursediv .content figure figcaption{
+  width: 100%;
+  padding: 3px 0 15px 0;
+}

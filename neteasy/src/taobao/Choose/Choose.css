@@ -1,0 +1,315 @@
+.choose{
+  margin-left: 4%;
+  font-size: 0.8em;
+  width: 994px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.choose .open{
+padding: 10px;
+}
+
+.choose .open span{
+  padding: 5px 10px;
+}
+
+.choose .open :last-child{
+  float: right;
+  border: #ccc solid 1px;
+  cursor: pointer;
+}
+.choose .hide{
+  height: 0px;
+  overflow: hidden;
+}
+.choose .content {
+  border: #ccc solid 1px;
+  width: 972px;
+  margin-top: 10px;
+  padding-right: 10px;
+  overflow: hidden;
+  transition: max-height .5s;
+  -moz-transition: max-height .5s; /* Firefox 4 */
+  -webkit-transition: max-height .5s; /* Safari 和 Chrome */
+  -o-transition: max-height .5s; /* Opera */  
+}
+
+.choose .content .cssDiv{
+  margin-left: 10px;
+  padding: 10px 0;
+  border-bottom: dashed #ccc 1px;
+}
+
+.choose .content .cssDiv span{
+  padding: 5px 10px;
+}
+
+.choose .content .cssDiv a{
+  margin-right: 30px;
+}
+
+.choose .content .cssDiv a:hover{
+  color: tomato;
+}
+
+.choose .content .cssDiv :last-child{
+  border: solid #ccc 1px;
+  float: right;
+  padding: 2px 5px;
+  margin: 0px 20px;
+  font-size: 0.6em;
+}
+
+.choose .content .cssDiv  :last-child:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+.choose .content .cssForm {
+  margin-left: 20px;
+  border-bottom: dashed #ccc 1px;
+}
+
+.choose .content .cssForm p{
+  text-align: center;
+}
+
+.choose .content .cssForm div label{
+  margin-right: 20px;
+}
+.choose .content .cssForm p input:hover{
+  cursor:pointer;
+}
+
+.choose .content .cssForm p :first-child{
+  background-color: tomato;
+  color: white;
+  border:solid 1px tomato;
+  margin-right: 5px;
+}
+
+.choose .content .cssForm p :last-child{
+  border:  solid 1px #ccc;
+}
+
+.choose .condition{
+  width: 982px;
+  border: solid #ccc 1px;
+  background-color: rgb(235, 235, 235);
+}
+
+.choose .condition div{
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.choose .condition .salse:hover{
+  color: tomato;
+  cursor: pointer;
+}
+
+.choose .condition .price:hover{
+  position: relative;
+}
+
+.choose .condition .price div {
+  position: absolute;
+  top: -1px;
+  left: 200;
+  border: solid #ccc 1px;
+  display: none;
+  background-color: white;
+  top: -3px;
+  width: 80px;
+}
+
+.choose .condition .price div span{
+  line-height: 2em
+}
+
+.choose .condition .price:hover div{
+  display: block;
+}
+
+.choose .condition .price div span:hover{
+  color: tomato;
+  cursor: pointer;
+}
+
+.choose .condition .range input{
+  width: 60px;
+}
+
+
+.choose .condition .range div{
+  cursor: pointer;
+  padding: 2px 5px;
+  display: none;
+  background-color: tomato;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.choose .condition .range:hover{
+  background-color: white;
+  width: 185px;
+}
+
+.choose .condition .range:hover div{
+  display:inline-block;
+  margin-left: 10px;
+  padding: 2px;
+}
+
+.choose .condition .addressCss{
+  float: right;
+  margin-top: -1px;
+  padding: 0;
+}
+
+.choose .condition .addressCss:hover{
+  position: relative;
+}
+
+.choose .condition .addressCss:hover .stepone{
+  border: solid #ccc 1px;
+  background-color: white;
+  border-bottom: none;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: 50;
+}
+
+.choose .condition .addressCss .stepone{  
+  padding: 8px 20px;
+  width: 40px;
+}
+
+.choose .condition .addressCss .steptwo{
+  display: none;
+}
+
+.choose .condition .addressCss .steptwo span{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+ .choose .condition .addressCss:hover .steptwo{
+  display: block;
+  border: solid #ccc 1px;
+  background-color: white;
+  position: absolute;
+  width: 200px;
+  left: -82px;
+  top: 33px;
+  padding: 8px;
+  z-index: 40;
+ }
+
+ .choose .condition .addressCss div span:hover{
+   color: tomato;
+   cursor: pointer;
+ } 
+
+.choose .serve input{
+  vertical-align:middle;  
+  margin-left: 20px;
+}
+
+.choose .serve{
+  padding: 10px;
+  border: solid #ccc 1px;
+  width: 962px;
+}
+
+.choose .serve:hover{
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+.choose .goods{
+  width: 988px;
+  margin: 0;
+  padding: 0;
+}
+
+.choose .list{
+  display: inline-block;
+  width: 231px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.choose .list:hover{
+  border:tomato solid 1px;
+}
+
+.choose .list img{
+  width: 231px;
+  height: 232px;
+}
+
+.choose .list a div{
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  background-color: rgba(255, 70, 37, 0.7);
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.choose .list a div span{
+  margin-left: 22%;
+  color: white;
+}
+
+.choose .list .img:hover{
+  position: relative;
+}
+
+.choose .list a:hover  div{
+  transition: height .5s;
+  height: 30px;
+}
+
+.choose .list .message{
+  padding: 0 10px 10px 10px;
+}
+
+.choose .list .message :nth-child(1){
+  display: flex;
+  align-items: center;
+}
+
+.choose .list .message :nth-child(1) :nth-child(1){
+font-size: 1.5em;
+color: tomato;
+}
+
+.choose .list .message :nth-child(1) :nth-child(2){
+  background-color: tomato;
+  color: white;
+  padding: 0 2px;
+  font-size: 0.8em
+}
+
+.choose .list .message :nth-child(1) :nth-child(3){
+  margin-left: auto;
+}
+
+.choose .list .message :nth-child(2):hover a{
+  color: tomato;
+  text-decoration: underline;
+}
+
+.choose .list .message :nth-child(3):hover{
+  color: tomato;
+}
+
+.choose .list .message :nth-child(4){
+  float: right;
+}

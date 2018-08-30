@@ -1,0 +1,39 @@
+main {
+  overflow: hidden;
+  min-width: 1200px;
+}
+main .background{
+  width: 120%;
+  margin-left: -10%;
+}
+main .maindiv{
+  margin: auto;
+  width: 80%;
+  min-width: 1200px;
+}
+
+main .maindiv .mainhead{
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  clear: both;
+  border-bottom: 2px red solid
+}
+
+main .maindiv .mainhead .logo{
+  width: 150px;
+  height: 50px;
+  float: left;
+}
+
+main .maindiv .mainhead .advertisement{
+ float: right;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+.search {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 0.7em;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.search img{
+  width: 150px;
+  margin-left: 5%;
+}
+
+.search ul{
+  list-style: none;
+  padding: 0;
+  line-height: 2em;
+  display: none;
+}
+
+.search a{
+  padding: 10px;
+}
+
+.search .market:hover ul li{
+  width: 350px;
+}
+
+.search .market{
+  display: inline;
+  top:10px;
+  margin-left: 180px;
+}
+
+.search .market span {
+  border: solid #ccc 1px;
+  padding: 2px 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 90;
+  top: 10px;
+}
+
+.search .market:hover span{
+  border-bottom: none;
+}
+
+.search .market:hover ul{
+  display: block;
+  border: solid 1px #ccc;
+  width: 350px;
+  position: absolute;
+  left: 51.5%;
+  top: 17px;
+  padding-top: 10px;
+  box-shadow: 2px 2px 3px #ccc;
+  z-index: 80;
+  background-color: white;
+}
+
+.search ul li:hover{
+  background-color: rgb(238, 238, 238);
+  border: solid 1px #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+.searchbar{
+  display: inline-block;
+  margin-left: 40%;
+  line-height: 2em;
+  font-size: 1.2em;
+  position: absolute;
+  top: 10px;
+}
+
+.searchbar div{
+  border: tomato solid 2px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
+}
+
+.search .goods{
+  border-right: none;
+  display: inline-block;
+  cursor:pointer;
+}
+
+.shop{
+display: none;
+position: absolute;
+left: 0px;
+top: 34px;
+cursor:pointer;
+}
+
+.search .goods:hover .shop{
+  display: block;
+  border-top: none;
+}
+
+.search .goods:hover{
+  border-bottom: none;
+}
+
+.search input[type=text]{
+  font-size: 1.4em;
+  line-height: 1.3em;
+  border: tomato solid 2px;
+  width: 300px;
+  border-left: none;
+  border-right: none;
+  padding: 3px 10px 6px 10px;
+}
+
+.search .accessories {
+  display: inline;
+  line-height: 1.5em;
+  padding: 6px 10px 8px 10px;
+  font-size: 1.2em;
+  border: solid tomato 1px;
+  color: white;
+  background-color: tomato;
+}
+ .search .accessories:hover{
+   background-color: rgb(212, 89, 68);
+   cursor:pointer;
+ }
+
+ .search .all {
+  display: inline;
+  line-height: 1.5em;
+  padding: 5px 10px 8px 10px;
+  font-size: 1.2em;
+  border: solid tomato 1px;
+  color: tomato;
+  background-color: rgb(255, 224, 218);
+  margin-left: 5px;
+}
+
+.search .all:hover{
+  background-color: rgb(223, 186, 180);
+  cursor:pointer;
+}

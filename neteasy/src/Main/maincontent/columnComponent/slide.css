@@ -1,0 +1,54 @@
+.maincontent .mainnews .left .leftside .outsidediv{
+  overflow: hidden;
+  position: relative;
+}
+
+.maincontent .mainnews .left .leftside .slide{
+  white-space: nowrap;
+  width: 400px;  
+  animation: slide 20s infinite;
+  margin-left: -2000px;
+  font-size: 0.9em;
+}
+
+.maincontent .mainnews .left .leftside .slide a{
+  color: black;
+}
+
+.maincontent .mainnews .left .leftside .slide .bigimg{
+  width: 400px;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.maincontent .mainnews .left .leftside .slide .bigimg img{
+height: 80%;
+}
+
+.maincontent .mainnews .left .leftside .slide img{
+  width: 100%;
+}
+
+.maincontent .mainnews .left .leftside .slide .smallimg{
+  width:200px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.maincontent .mainnews .left .leftside .outsidediv .direction{
+  position: absolute;
+  top: 40%;
+  width: 15%;
+  height: 20%;
+  background-color: rgba(36, 36, 36, 0.534);
+  align-items: center;
+  display: none;
+  padding-top: 11%;
+  cursor: pointer;
+}
+
+.maincontent .mainnews .left .leftside .outsidediv:hover .direction{
+  display: block;
+}

@@ -1,0 +1,78 @@
+
+ .bigimgdiv{
+  width: 300px;
+  display: inline-block;
+  position: relative;
+}
+
+ .bigimgdiv img{
+  width: 300px;
+  height: 200px;
+}
+
+.bigimgdiv span{
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: white;
+  background:linear-gradient(rgba(6, 6, 250, 0.336),blue);
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.bigimgdiv:hover span{
+  color: white;
+  display: inline-block;
+  height: 0px;
+  font-size: 1.5em;
+  left: 0;
+  top: 20%;
+  bottom: auto;
+  line-height:40px;
+  padding-left:5px;
+  border-width: 0px 20px 30px 0px;
+  border-style: none solid solid;
+  border-color: transparent transparent rgb(6, 6, 250);
+  background: none;
+}
+
+.run{
+  animation: adslide 16s infinite;
+}
+
+.smallimgdiv{
+  display: inline-block;
+  width: 50px;
+  box-sizing: content-box;
+  height: 40px;
+}
+
+.smallimgdiv:hover{
+  border: solid 1px tomato;
+}
+
+@keyframes adslide{
+  0% {margin-left: 0px}
+  2.5%{margin-left: -50px;}
+  12.5%{margin-left: -50px;}
+  15%{margin-left: -100px;}
+  25%{margin-left: -100px;}
+  27.5%{margin-left: -150px;}
+  37.5%{margin-left: -150px;}
+  40%{margin-left: -200px;}
+  50%{margin-left: -200px;}
+  52.5%{margin-left: -250px;}
+  62.5%{margin-left: -250px;}
+  65%{margin-left: -300px;}
+  75%{margin-left: -300px;}
+  77.5%{margin-left: -350px;}
+  87.5%{margin-left: -350px;}
+  90%{margin-left: -400px;}
+  100%{margin-left: -400px;}
+}
+
+
+.smallimgdiv img{
+  width: 50px;
+  height: 40px;
+}

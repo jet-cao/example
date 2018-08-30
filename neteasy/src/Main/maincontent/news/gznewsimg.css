@@ -1,0 +1,7 @@
+.gznewsimg img{
+  transition: all .6s
+}
+
+.gznewsimg img:hover{
+  transform: scale(1.4)
+}
