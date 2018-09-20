@@ -5,7 +5,8 @@ class TurnToTaobao extends React.Component{
   render() {
     return (
       <div  style={{backgroundColor:'red',fontWeight:'bold'}}>
-        <Link to='/taobao' style={{color:'white'}}>点击转到淘宝demo</Link>
+        <Link to='/taobao' style={{color:'white',margin:'10px'}}>点击转到淘宝demo</Link>
+        <Link to='/coffee' style={{color:'white',margin:'10px'}}>点击转到响应式demo</Link>
       </div>
     );
   }

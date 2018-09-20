@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react';
 import Slide from './slide';
 import Course from '../course/course';
 import Live from '../live/live';
@@ -24,9 +24,9 @@ const Mainnews = (props) => {
         </div>
       </div>
       <div className='right'>
-        <Product/>
-        <AdSlideContent/>
-        <WeatherContainer/>
+        <Product />
+        <AdSlideContent />
+        <WeatherContainer />
       </div>
     </div>
   )
