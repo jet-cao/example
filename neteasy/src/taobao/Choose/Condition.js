@@ -13,13 +13,13 @@ function Condition(props) {
         </div>
       </div>
       <div className='range'>
-        <input type='text' placeholder='&yen;' name='range'/>-
-        <input type='text' placeholder='&yen;' name='range'/>
+        <input type='text' placeholder='&yen;' name='range' />-
+        <input type='text' placeholder='&yen;' name='range' />
         <div data-id='range' onClick={props.range}>确定</div>
       </div>
       <div className={props.addressCss}>
         <div className='stepone'>
-        <span>发货地</span>
+          <span>发货地</span>
         </div>
         <div className='steptwo'>
           {props.address.map((i, index) => (
@@ -28,7 +28,7 @@ function Condition(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Condition;

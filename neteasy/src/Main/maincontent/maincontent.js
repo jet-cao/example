@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Mainnews from './columnComponent/columncomponent';
 import './maincontent.css';
 import SportNews from '../redux/container/sportnewscontainer';

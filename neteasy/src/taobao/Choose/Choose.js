@@ -6,10 +6,10 @@ import Condition from './Condition';
 import Serve from './Serve';
 import Goods from './Goods';
 
-const firstCheckBox = [{ text: '情人节', url: '' }, { text: '圣诞', url: '' }]
-const secondCheckBox = [{ text: '人造水晶', url: '' }, { text: '水晶', url: '' }, { text: '布', url: '' }, { text: '琉璃', url: '' }, { text: '有机玻璃', url: '' }]
-const address = ['福建', '江苏', '浙江', '上海', '湖北', '广东']
-const serve = [{ text: '包邮' }, { text: '赠送运费退货险' }, { text: '货到付款' }, { text: '公益宝贝' }, { text: '二手' }, { text: '天猫' }, { text: '正品保障' }, { text: '7天内退货' }]
+const firstCheckBox = [{ text: '情人节', url: '' }, { text: '圣诞', url: '' }];
+const secondCheckBox = [{ text: '人造水晶', url: '' }, { text: '水晶', url: '' }, { text: '布', url: '' }, { text: '琉璃', url: '' }, { text: '有机玻璃', url: '' }];
+const address = ['福建', '江苏', '浙江', '上海', '湖北', '广东'];
+const serve = [{ text: '包邮' }, { text: '赠送运费退货险' }, { text: '货到付款' }, { text: '公益宝贝' }, { text: '二手' }, { text: '天猫' }, { text: '正品保障' }, { text: '7天内退货' }];
 const goods = [
   { src: './Img/1.jpg', price: '290.00', pay: '65', introduce: '24K金玫瑰花束送女友老婆生日礼物礼盒装9朵金玫瑰花520节日礼物', shop: '黛蓝丝', address: '福建 莆田', url: '' }, { src: './Img/2.jpg', price: '360.00', pay: '34', introduce: '24k金箔玫瑰花纯银镀金送女友银饰婚庆告白礼物七夕情人节金玫瑰', shop: '新浪时尚8', address: '福建 莆田', url: '' }, { src: './Img/3.jpg', price: '360.00', pay: '34', introduce: '24k金箔玫瑰花七夕情人节礼物镀金玫瑰花束送女友送爱人纯银摆件', shop: '沐白银饰', address: '福建 莆田', url: '' }, { src: './Img/4.jpg', price: '360.00', pay: '43', introduce: '24k金箔纯银镀金玫瑰花七夕情人节礼物送女友母亲节礼品结婚摆件', shop: '时兴out', address: '福建 莆田', url: '' },
   { src: './Img/5.jpg', price: '25.00', pay: '286', introduce: '开光天然粉水晶七星阵摆件粉水晶球招桃花稳定感情利姻缘新婚礼物', shop: '石全九美水晶城堡', address: '江苏 连云港', url: '' }, { src: './Img/6.jpg', price: '100.00', pay: '42', introduce: '原石正品招财家居聚宝盆天然紫晶洞摆件紫晶簇净化消磁真水晶礼物', shop: '我要的永远在哪里', address: '江苏 连云港', url: '' }, { src: './Img/7.jpg', price: '198.00', pay: '30', introduce: '结婚纪念爱情银币刻字生日礼物女送老婆新人高档浪漫个性纯银定制', shop: '阿古珞', address: '浙江 温州', url: '' }, { src: './Img/8.jpg', price: '3.50', pay: '256', introduce: '金箔金玫瑰花24k金箔仿真送女友生日创意浪漫开业情人节刻字礼物', shop: '诗婷露雅代理商', address: '浙江 温州', url: '' },
@@ -50,15 +50,15 @@ class Choose extends React.Component {
   }
 
   priceSort(e) {
-    const id = e.target.dataset.id
+    const id = e.target.dataset.id;
     this.setState({ priceSort: (id == 'desc' ? this.desc('price') : id == 'asc' ? this.asc('price') : id == 'pay' ? this.asc('pay') : goods) });
   }
   desc(condition) {
-    var desc = goods.sort(function (x, y) { return x[condition] - y[condition] });
+    var desc = goods.sort(function (x, y) { return x[condition] - y[condition]; });
     return desc;
   }
   asc(condition) {
-    var asc = goods.sort(function (x, y) { return y[condition] - x[condition] });
+    var asc = goods.sort(function (x, y) { return y[condition] - x[condition]; });
     return asc;
   }
   range(e) {
@@ -68,16 +68,16 @@ class Choose extends React.Component {
     for (let i = 0; i < goods.length; i++) {
       ((goods[i].price - input[0].value > 0 && goods[i].price - input[1].value < 0)||(goods[i].price - input[0].value < 0 && goods[i].price - input[1].value > 0)) 
       && priceRange.push(goods[i]);
-    };
-    (!isNaN(input[0].value + 0) && !isNaN(input[1].value + 0)) ? this.setState({ priceSort: priceRange }) : alert('请确保输入的是数字')
+    }
+    (!isNaN(input[0].value + 0) && !isNaN(input[1].value + 0)) ? this.setState({ priceSort: priceRange }) : alert('请确保输入的是数字');
   }
   addressRange(e) {
     const id = e.target.dataset.id;
     let addressRange = [];
     for (let i = 0; i < goods.length; i++) {
       goods[i].address.indexOf(id) !== -1 && addressRange.push(goods[i]);
-    };
-    this.setState({ priceSort: addressRange })
+    }
+    this.setState({ priceSort: addressRange });
   }
   render() {
     return (
@@ -144,7 +144,7 @@ class Choose extends React.Component {
           message='message'
         />
       </div>
-    )
+    );
   }
 }
 

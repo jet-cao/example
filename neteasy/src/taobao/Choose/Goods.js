@@ -21,13 +21,13 @@ function Goods(props) {
             <p>
               <a href=''>{i.introduce}</a>
             </p>
-            <a href='' style={{marginLeft:'-115px'}}>{i.shop}</a>
+            <a href='' style={{float:'left'}}>{i.shop}</a>
             <span>{i.address}</span>
           </div>
         </div>
       ))}
     </div>
-  )
+  );
 }
 
 export default Goods;
